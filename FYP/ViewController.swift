@@ -11,14 +11,36 @@ import CoreLocation
  //imports Google Maps
 import GoogleMaps
 import UIKit
-                                    //Conforming to the Delegate
-class ViewController: UIViewController,CLLocationManagerDelegate {
 
+
+
+
+
+                                    //Conforming to the Delegate
+class ViewController: UIViewController, CLLocationManagerDelegate {
+
+    
+
+    
+    
     //Creating a Location manager
     let manager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //* giving search bar name
+        title = "Maps"
+        
+        
+        
+     
+        
+      
+   
+    
+        
+
         
         //Request permisson and setup manager
    
@@ -45,6 +67,8 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         
         
     }
+    
+
 
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
        //We want to get location out of this above^
@@ -68,8 +92,14 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
              marker.snippet = "Ireland"
              marker.map = mapView
         
+        
+        
+    
+        
+        
     }
 
-
+    
 }
+
 
