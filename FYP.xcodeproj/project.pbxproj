@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		39E55563C619F3C60A3B854F /* libPods-FYP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3905F0569459E2FD436A54 /* libPods-FYP.a */; };
 		B509DC0C273C87B500ABF2DF /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B509DC0B273C87B500ABF2DF /* ResultsViewController.swift */; };
+		B55ED239274E864D00D52CC1 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55ED238274E864D00D52CC1 /* DesignableView.swift */; };
+		B55ED23B274E9A0600D52CC1 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B55ED23A274E9A0600D52CC1 /* UIViewController+Extensions.swift */; };
 		B5A125AE273AE7EC0022C73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A125AD273AE7EC0022C73A /* AppDelegate.swift */; };
 		B5A125B0273AE7EC0022C73A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A125AF273AE7EC0022C73A /* SceneDelegate.swift */; };
 		B5A125B2273AE7EC0022C73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A125B1273AE7EC0022C73A /* ViewController.swift */; };
@@ -19,6 +21,7 @@
 		B5A125CF273AE8080022C73A /* FYPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A125CE273AE8080022C73A /* FYPUITests.swift */; };
 		B5A125D1273AE8080022C73A /* FYPUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5A125D0273AE8080022C73A /* FYPUITestsLaunchTests.swift */; };
 		B5A125DE273AEB210022C73A /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = B5A125DD273AEB200022C73A /* Podfile */; };
+		B5C87D9B274EAE5200AB204D /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C87D9A274EAE5200AB204D /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,8 @@
 		3115E2257216EEAC927B0262 /* Pods-FYP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYP.debug.xcconfig"; path = "Target Support Files/Pods-FYP/Pods-FYP.debug.xcconfig"; sourceTree = "<group>"; };
 		3C3905F0569459E2FD436A54 /* libPods-FYP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B509DC0B273C87B500ABF2DF /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		B55ED238274E864D00D52CC1 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		B55ED23A274E9A0600D52CC1 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		B5A125AA273AE7EC0022C73A /* FYP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FYP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5A125AD273AE7EC0022C73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B5A125AF273AE7EC0022C73A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +62,7 @@
 		B5A125CE273AE8080022C73A /* FYPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPUITests.swift; sourceTree = "<group>"; };
 		B5A125D0273AE8080022C73A /* FYPUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FYPUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B5A125DD273AEB200022C73A /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B5C87D9A274EAE5200AB204D /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,9 @@
 				B5A125B8273AE8060022C73A /* LaunchScreen.storyboard */,
 				B5A125BB273AE8060022C73A /* Info.plist */,
 				B509DC0B273C87B500ABF2DF /* ResultsViewController.swift */,
+				B55ED238274E864D00D52CC1 /* DesignableView.swift */,
+				B55ED23A274E9A0600D52CC1 /* UIViewController+Extensions.swift */,
+				B5C87D9A274EAE5200AB204D /* WelcomeViewController.swift */,
 			);
 			path = FYP;
 			sourceTree = "<group>";
@@ -336,7 +345,10 @@
 				B5A125B2273AE7EC0022C73A /* ViewController.swift in Sources */,
 				B5A125AE273AE7EC0022C73A /* AppDelegate.swift in Sources */,
 				B5A125B0273AE7EC0022C73A /* SceneDelegate.swift in Sources */,
+				B55ED239274E864D00D52CC1 /* DesignableView.swift in Sources */,
+				B55ED23B274E9A0600D52CC1 /* UIViewController+Extensions.swift in Sources */,
 				B509DC0C273C87B500ABF2DF /* ResultsViewController.swift in Sources */,
+				B5C87D9B274EAE5200AB204D /* WelcomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

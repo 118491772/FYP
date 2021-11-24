@@ -16,7 +16,7 @@ import UIKit
 
 
 
-                                    //Conforming to the Delegate
+         //Setting class                           //Conforming to the Delegate
 class ViewController: UIViewController, CLLocationManagerDelegate {
 
     
@@ -30,19 +30,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         super.viewDidLoad()
         
         //* giving search bar name
-        title = "Maps"
+        title = "SafeCity"
         
         
-        
-     
-        
-      
-   
-    
-        
-
-        
-        //Request permisson and setup manager
+                //Request permisson and setup manager
    
         //Setting the delegate so we can recieve the event calls
         manager.delegate = self
@@ -69,14 +60,14 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
 
-
+     //Updates Location
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
        //We want to get location out of this above^
         guard let location = locations.first else {
             return
         }
          
-        
+        //Declaring coordinates
         let coordinate = location.coordinate
         
         //Sets Up Camera View Point
@@ -84,7 +75,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
              let mapView = GMSMapView.map(withFrame: view.frame, camera: camera)
              view.addSubview(mapView)
              
-             // Creates a marker in the center of the map
+             // Creates a marker on the map
             //A marker is an google map adaptation
              let marker = GMSMarker()
         marker.position = CLLocationCoordinate2D(latitude: coordinate.latitude, longitude: coordinate.longitude)
@@ -92,14 +83,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
              marker.snippet = "Ireland"
              marker.map = mapView
         
-        
-        
-    
-        
-        
     }
-
-    
 }
 
 

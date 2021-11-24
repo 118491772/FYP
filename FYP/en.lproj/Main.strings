@@ -1,0 +1,66 @@
+
+/* Class = "UILabel"; text = "Welcome to SafeCity"; ObjectID = "2Ez-es-BAg"; */
+"2Ez-es-BAg.text" = "Welcome to SafeCity";
+
+/* Class = "UILabel"; text = "Subscribe for Updates"; ObjectID = "Do9-cT-mbB"; */
+"Do9-cT-mbB.text" = "Subscribe for Updates";
+
+/* Class = "UINavigationItem"; title = "Account"; ObjectID = "ElP-jk-nda"; */
+"ElP-jk-nda.title" = "Account";
+
+/* Class = "UILabel"; text = "Don't have an account?"; ObjectID = "Jkq-gC-BtV"; */
+"Jkq-gC-BtV.text" = "Don't have an account?";
+
+/* Class = "UIButton"; configuration.title = "Back"; ObjectID = "KtG-1c-cD6"; */
+"KtG-1c-cD6.configuration.title" = "Back";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "KtG-1c-cD6"; */
+"KtG-1c-cD6.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "O8m-p8-v0M"; */
+"O8m-p8-v0M.title" = "Item";
+
+/* Class = "UIButton"; configuration.title = "Sign up"; ObjectID = "OCN-Sb-RBH"; */
+"OCN-Sb-RBH.configuration.title" = "Sign up";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "OCN-Sb-RBH"; */
+"OCN-Sb-RBH.normalTitle" = "Button";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "UVk-HX-cKF"; */
+"UVk-HX-cKF.title" = "Item";
+
+/* Class = "UILabel"; text = "Welcome Back"; ObjectID = "WNF-uu-MFc"; */
+"WNF-uu-MFc.text" = "Welcome Back";
+
+/* Class = "UIButton"; configuration.title = "Continue"; ObjectID = "WNM-Zi-ZgF"; */
+"WNM-Zi-ZgF.configuration.title" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WNM-Zi-ZgF"; */
+"WNM-Zi-ZgF.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Continue"; ObjectID = "fB5-I9-aUg"; */
+"fB5-I9-aUg.configuration.title" = "Continue";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fB5-I9-aUg"; */
+"fB5-I9-aUg.normalTitle" = "Button";
+
+/* Class = "UINavigationItem"; title = "SafeCity"; ObjectID = "fJs-eF-kNg"; */
+"fJs-eF-kNg.title" = "SafeCity";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "gvp-mf-uWT"; */
+"gvp-mf-uWT.title" = "Item";
+
+/* Class = "UINavigationItem"; title = "Report"; ObjectID = "j0k-l1-Vtb"; */
+"j0k-l1-Vtb.title" = "Report";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "llC-gg-ejJ"; */
+"llC-gg-ejJ.placeholder" = "Email Address";
+
+/* Class = "UILabel"; text = "Enter your Email"; ObjectID = "slq-Lj-M4M"; */
+"slq-Lj-M4M.text" = "Enter your Email";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "x9H-2E-s7c"; */
+"x9H-2E-s7c.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email Address"; ObjectID = "xSl-QR-wPz"; */
+"xSl-QR-wPz.placeholder" = "Email Address";
