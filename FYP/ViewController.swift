@@ -84,6 +84,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
              marker.map = mapView
         
     }
+    
+    
+    
+    // Iteration 2 Swipe functionality for tab bar
+    @IBAction func  didTapButton() {
+        
+        let vc =  UIViewController()
+    
+   
+        navigationController?.pushViewController(vc, animated: true)
+        
+    }
+    
+    
+    
+    
+    
 }
 
 
