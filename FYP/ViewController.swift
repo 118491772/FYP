@@ -86,21 +86,53 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     }
     
     
-    
-    // Iteration 2 Swipe functionality for tab bar
-    @IBAction func  didTapButton() {
-        
-        let vc =  UIViewController()
-    
-   
-        navigationController?.pushViewController(vc, animated: true)
-        
-    }
+  
     
     
     
     
     
+    
+    
+    
+    
+    
+    
+    
+ //  @IBAction func UIButton(_ sender: UIButton) {
+   //  guard let number = URL(string: "tel://" + "0894323619") else {return}
+   //    UIApplication.shared.open(number)
+  //  }
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+    
+    
+    
+    //
+    
+    //Setting class                           //Conforming to the Delegate
+   // class SOSViewController: UIViewController {
+
+   // @IBAction func clicked(_ sender: Any){
+    //    guard let number = URL(string: "tel://" + "0894323619") else {return}
+      //  UIApplication.shared.open(number)
+//    }
+    
+    
+    //
+    
+    
+
+    
+//}
+
+
 }
-
-

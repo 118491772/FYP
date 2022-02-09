@@ -4,6 +4,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,11 +18,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="selectedImageTintColor" systemColor="labelColor"/>
+                        <imageReference key="selectionIndicatorImage" image="map" catalog="system" symbolScale="medium"/>
+                        <tabBarAppearance key="standardAppearance"/>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <nil key="selectionIndicatorImage"/>
+                        </variation>
                     </tabBar>
                     <connections>
                         <segue destination="Ray-Nw-8IR" kind="relationship" relationship="viewControllers" id="ZGx-3x-chO"/>
                         <segue destination="q1L-43-gjZ" kind="relationship" relationship="viewControllers" id="eRW-Qu-T6d"/>
                         <segue destination="UVK-Tk-ROO" kind="relationship" relationship="viewControllers" id="GA8-Zh-cBj"/>
+                        <segue destination="Rc1-bQ-Irw" kind="relationship" relationship="viewControllers" id="aXL-md-wtt"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xw1-ep-00e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -32,7 +40,10 @@
         <scene sceneID="z77-xO-cg0">
             <objects>
                 <navigationController title="SafeCity" id="Ray-Nw-8IR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="map" catalog="system" id="gvp-mf-uWT"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="map" catalog="system" badgeValue="Map" id="gvp-mf-uWT">
+                        <color key="badgeColor" systemColor="labelColor"/>
+                        <imageReference key="selectedImage" image="map" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="P1t-19-1KF">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -203,7 +214,7 @@
                                                         <state key="normal" title="Button"/>
                                                         <buttonConfiguration key="configuration" style="plain" title="Sign up"/>
                                                         <connections>
-                                                            <segue destination="ugb-Sw-Z4l" kind="presentation" id="jqc-7J-90x"/>
+                                                            <segue destination="ugb-Sw-Z4l" kind="push" id="9m1-2C-Riy"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -236,7 +247,7 @@
             <objects>
                 <viewController id="ugb-Sw-Z4l" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NFj-bv-mNa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <userGuides>
                             <userLayoutGuide location="16" affinity="minX"/>
@@ -244,7 +255,7 @@
                         </userGuides>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="4Y2-vp-srx">
-                                <rect key="frame" x="0.0" y="0.0" width="407" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="407" height="725"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="hLy-6h-FHw">
                                         <rect key="frame" x="16" y="8" width="375" height="31"/>
@@ -320,10 +331,10 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="UcO-ET-4xp">
-                                        <rect key="frame" x="16" y="227.33333333333334" width="375" height="41.000000000000028"/>
+                                        <rect key="frame" x="16" y="227.33333333333331" width="375" height="20.666666666666657"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Uq-Iq-aKS">
-                                                <rect key="frame" x="0.0" y="10.333333333333313" width="20" height="20.333333333333329"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="20" height="20.666666666666668"/>
                                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="20" id="EDz-Ot-Rwx"/>
@@ -339,7 +350,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="200" verticalHuggingPriority="251" text="Subscribe for Updates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Do9-cT-mbB">
-                                                <rect key="frame" x="36" y="10.333333333333313" width="339" height="20.333333333333329"/>
+                                                <rect key="frame" x="36" y="0.33333333333337123" width="339" height="20.333333333333332"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -347,7 +358,7 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNM-Zi-ZgF">
-                                        <rect key="frame" x="16" y="292.33333333333331" width="375" height="50"/>
+                                        <rect key="frame" x="16" y="272" width="375" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBlueColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="kID-mv-mmc"/>
@@ -364,7 +375,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </button>
                                     <view contentMode="scaleToFill" verticalHuggingPriority="200" translatesAutoresizingMaskIntoConstraints="NO" id="dHG-2l-M7Q">
-                                        <rect key="frame" x="16" y="366.33333333333326" width="375" height="433.66666666666674"/>
+                                        <rect key="frame" x="16" y="346" width="375" height="371"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
@@ -380,6 +391,7 @@
                             <constraint firstItem="4Y2-vp-srx" firstAttribute="top" secondItem="tym-qd-fqT" secondAttribute="top" id="tCt-07-wV8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="36R-4v-DS2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Szl-Gt-EqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="RhH-Vf-gd7" userLabel="Exit" sceneMemberID="exit"/>
@@ -466,7 +478,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ClM-hu-V7R" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="7a8-Rc-lkc" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="800.00000000000011" y="2358.4821428571427"/>
+            <point key="canvasLocation" x="761" y="2350"/>
         </scene>
         <!--Report-->
         <scene sceneID="3QA-fU-Gk1">
@@ -615,11 +627,37 @@
             </objects>
             <point key="canvasLocation" x="760.86956521739137" y="1579.6875"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="2ET-FA-s1i">
+            <objects>
+                <viewController id="7dg-hB-0bj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jIz-TX-DXR">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXf-Pe-a2u">
+                                <rect key="frame" x="137" y="330" width="140" height="89"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bko-6c-IZv"/>
+                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9XA-wp-Dca"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gah-Kx-B4u" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1534.7826086956522" y="1577.6785714285713"/>
+        </scene>
         <!--Account-->
         <scene sceneID="jme-1L-d8u">
             <objects>
                 <navigationController title="Account" id="q1L-43-gjZ" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="person" catalog="system" id="UVk-HX-cKF"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="person" catalog="system" badgeValue="Account" selectedImage="person" id="UVk-HX-cKF">
+                        <color key="badgeColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Eea-3t-cJn">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -636,7 +674,9 @@
         <scene sceneID="3ub-mJ-eHO">
             <objects>
                 <navigationController title="Report" id="UVK-Tk-ROO" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" badgeValue="Report" selectedImage="ic_covid_medical_waypoint_alert_32pt.png" id="O8m-p8-v0M"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="exclamationmark.triangle" catalog="system" badgeValue="Report" selectedImage="exclamationmark.triangle" id="O8m-p8-v0M">
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ygg-7W-axs">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -649,14 +689,37 @@
             </objects>
             <point key="canvasLocation" x="761" y="863"/>
         </scene>
+        <!--SOS-->
+        <scene sceneID="Jmh-IC-bYq">
+            <objects>
+                <navigationController title="SOS" id="Rc1-bQ-Irw" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="S.O.S" image="xmark" catalog="system" badgeValue="S.O.S" selectedImage="exclamationmark.triangle" id="7Ny-Xw-VVv">
+                        <color key="badgeColor" systemColor="systemRedColor"/>
+                    </tabBarItem>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="rlz-aw-ubV">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="7dg-hB-0bj" kind="relationship" relationship="rootViewController" id="cUf-Wh-RSh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KzI-IN-AJC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1510" y="863"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Login Header" width="1200" height="400"/>
         <image name="Report_ Header" width="1275" height="1179"/>
-        <image name="ic_covid_medical_waypoint_alert_32pt.png" width="32" height="32"/>
+        <image name="exclamationmark.triangle" catalog="system" width="128" height="112"/>
         <image name="map" catalog="system" width="128" height="110"/>
         <image name="person" catalog="system" width="128" height="117"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <image name="xmark.app" catalog="system" width="128" height="114"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
